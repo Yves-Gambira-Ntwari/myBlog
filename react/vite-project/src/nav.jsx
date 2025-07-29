@@ -3,15 +3,15 @@ import { useState } from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 export default function NavBar(){
-  const [close, useClose] = useState(true)
+  const [close, setClose] = useState(true)
   const handleClose = ()=>{
-    useClose(!close)
+    setClose(!close)
   }
   console.log(close)
   return(
     <>
     <header className="md:flex max-sm:fixed justify-between md:gap-20 lg:gap-100 z-10">
-    <div class="nav-head max-sm:shadow-2xl max-md:shadow-2xl max-sm:shadow-2xl items-center max-md:flex max-md:gap-100">
+    <div class="nav-head max-sm:shadow-2xl max-md:shadow-2xl max-sm:shadow-2xl items-center max-md:flex max-md:gap-80">
       <div>
       <h2 className="font-bold text-2xl p-4">MyName</h2>
       </div>
