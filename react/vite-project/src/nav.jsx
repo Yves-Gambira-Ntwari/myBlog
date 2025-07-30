@@ -10,7 +10,7 @@ export default function NavBar(){
   console.log(close)
   return(
     <>
-    <header className="md:flex max-sm:fixed justify-between md:gap-20 lg:gap-100 z-10">
+    <header className="md:flex max-sm:fixed justify-between md:gap-20 lg:gap-100 z-10 md:ml-20">
     <div class="nav-head max-sm:shadow-2xl max-md:shadow-2xl max-sm:shadow-2xl items-center max-md:flex max-md:gap-80">
       <div>
       <h2 className="font-bold text-2xl p-4">MyName</h2>
@@ -21,7 +21,7 @@ export default function NavBar(){
     <div>
     </div>
     </div>
-    <nav className={`-z-10 overflow-hidden transition-all duration-300 border-r-1 border-[#F14747] max-sm:fixed sm:fixed p-2 ${close==true?"w-100 visible":"w-0 -ml-100"} max-md:w-40 md:w-full md:static`}>
+    <nav className={`overflow-hidden transition-all duration-300 border-r-1 border-[#F14747] max-sm:bottom-0 max-sm:top-16 sm:bottom-0 sm:top-16 max-sm:z-[-1] max-sm:fixed sm:fixed p-2 ${close==true?"w-100 visible":"w-0 -ml-100"} max-md:w-40 md:w-full md:static`}>
       <div className="md:flex md:gap-5">
         <div className="max-sm:grid sm:grid max-sm:grid-cols-1 max-sm:p-4 [&>*]:py-2 md:flex md:gap-5">
         <Link to="">Home</Link>
